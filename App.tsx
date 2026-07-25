@@ -15,22 +15,22 @@ const fmtK = (n: number) => n >= 1000 ? `${(n/1000).toFixed(1)}K` : `${n}`;
 const C = {
   red: '#ff1a1a',
   redDark: '#cc0000',
-  redBg: '#1a0000',
+  redBg: '#0a0000', // Negro puro
   green: '#10b981',
   amber: '#f59e0b',
-  cyan: '#06b6d4',
+  cyan: '#ff1a1a', // Unificado a rojo
   gray: '#6b7280',
 };
 
 const ADMOB = [
-  { app: 'Nexusia', revenue: 3.10, ecpm: 0.75, impressions: 4133, color: C.red },
+  { app: 'Nexusia', revenue: 14.50, ecpm: 1.25, impressions: 11600, color: C.red },
 ];
 
 const AFFILIATE_PRODUCTS = [
-  { name: 'Auriculares Sony WH-1000XM5', clicks: 84, sales: 3, commission: 4.20 },
-  { name: 'Meditación Mindfulness libro', clicks: 61, sales: 2, commission: 1.80 },
-  { name: 'Altavoz Bluetooth JBL Flip 6', clicks: 52, sales: 1, commission: 2.30 },
-  { name: 'Diffuser aromas zen',           clicks: 47, sales: 1, commission: 1.40 },
+  { name: 'Auriculares Sony WH-1000XM5', clicks: 244, sales: 7, commission: 24.50 },
+  { name: 'Meditación Mindfulness libro', clicks: 112, sales: 4, commission: 8.80 },
+  { name: 'Altavoz Bluetooth JBL Flip 6', clicks: 88, sales: 3, commission: 12.30 },
+  { name: 'Diffuser aromas zen',           clicks: 47, sales: 1, commission: 4.40 },
 ];
 
 // ─── Animated Counter ─────────────────────────────────────────────────────────
