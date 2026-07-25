@@ -190,6 +190,15 @@ export default function App() {
 
   useEffect(() => { fetchState(); }, [fetchState]);
 
+  // Inicializar anuncios AdSense
+  useEffect(() => {
+    try {
+      if (window.adsbygoogle) {
+        window.adsbygoogle.push({});
+      }
+    } catch (e) {}
+  }, []);
+
   const handleWithdraw = async () => {
     const amount = parseFloat(withdrawAmount);
     if (!amount || amount <= 0) return;
@@ -493,6 +502,16 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {/* Anuncio AdSense */}
+      <div className="max-w-6xl mx-auto px-4 pb-2">
+        <ins className="adsbygoogle"
+             style={{ display: 'block', width: '100%', height: '60px' }}
+             data-ad-client="ca-pub-4903263409458961"
+             data-ad-slot="8825147276"
+             data-ad-format="banner"
+             data-full-width-responsive="false"></ins>
+      </div>
 
       {/* Footer */}
       <footer className="border-t border-white/[0.06] py-4 text-center text-xs text-gray-500">
