@@ -5,15 +5,16 @@
 
 :root {
   color-scheme: dark;
-  --c-purple: #7c3aed;
-  --c-pink: #ec4899;
+  --c-red: #ff1a1a;
+  --c-red-dark: #cc0000;
+  --c-red-bg: #1a0000;
   --c-green: #10b981;
   --c-amber: #f59e0b;
   --c-cyan: #06b6d4;
 }
 
 body {
-  background: #040608;
+  background: #0a0000;
   color: #fff;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
