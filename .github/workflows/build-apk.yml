@@ -40,6 +40,9 @@ jobs:
           cp android-src/build.gradle.root build.gradle
           cp android-src/build.gradle.app app/build.gradle
           cp android-src/gradle.properties gradle.properties
+          # Generate placeholder icon
+          mkdir -p app/src/main/res/mipmap-hdpi
+          echo "placeholder" > app/src/main/res/mipmap-hdpi/ic_launcher.png || true
 
       - name: Build APK
         run: gradle assembleDebug --no-daemon
